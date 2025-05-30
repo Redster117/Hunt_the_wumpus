@@ -1,3 +1,7 @@
-from cave import cave
+from cave import Cave
 
-cavern = cave("cavern")
+cavern = Cave("Cavern")
+cavern.set_description("A dark and damp cavern with stalactites hanging from the ceiling.")
+grotto = Cave("Grotto")
+dungeon = Cave("Dungeon")
+cavern.describe()
