@@ -35,3 +35,5 @@ class Cave:
         """Return the details of the cave."""
         for direction, cave in self.linked_caves.items():
             print("The " + cave.get_name() + " is " + direction)
+
+    def move(self, direction):
