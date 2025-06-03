@@ -5,4 +5,5 @@ Created the cave class document and wrote the first attributes (name and descrip
 Wrote setter and getter methods for each attributes. Started planning the layout of the caves.
 2/6/25 - Wrote a dictionary attribute to store the links to other cave objects.
 Wrote and tested a method to print the linked_caves dictionary to the terminal
-3/6/25 - 
+3/6/25 - Added code to the main program to allow the player to move between different cave objects. Set up a new character class and test program.
+Created 'Blorpington - The Wumpus Character' in the test program and tested the conversation method.
