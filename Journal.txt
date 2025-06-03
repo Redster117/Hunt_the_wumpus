@@ -1,0 +1,8 @@
+27/5/25 - Set up the repo for thr Hunt the Wumpus project
+Spent some time learning about the original projet 1973 game.
+Created the cave class document and wrote the first attributes (name and description)
+30/5/25 - Write the main.py program to call the class and make the first cave object. Modified the attributes to set up name on installation.
+Wrote setter and getter methods for each attributes. Started planning the layout of the caves.
+2/6/25 - Wrote a dictionary attribute to store the links to other cave objects.
+Wrote and tested a method to print the linked_caves dictionary to the terminal
+3/6/25 - 
