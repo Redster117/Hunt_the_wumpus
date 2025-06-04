@@ -27,3 +27,25 @@ class Character:
         """Declines to fight."""
         print(self.name + "does not want to fight a retard like you.")
         return True
+
+class Enemy(Character):
+    """Defines attributes and methods for the Enemy sub-class"""
+    def __init__(self, char_name, char_description):
+        super().__init__(char_name, char_description)
+        self.weakness = None
+
+    def set_weakness(self, item_weakness):
+        """Sets the character's weakness"""
+        self.weakness = item_weakness
+
+    def get_weakness(self):
+        """Gets weakness"""
+        return self.weakness
+
+    def fight(self, combat_item):
+        if combat_item == self.weakness:
+            print("You fend off " + self.name + " with your " + combat_item)
+            return True
+        else:
+            print(self.name + " swallows you whole! U R DED.")
+            return False
