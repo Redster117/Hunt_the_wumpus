@@ -9,7 +9,7 @@ class Character:
 
     def describe(self):
         """Sets the character description."""
-        print(self.name + " is here!" )
+        print(self.name + " is here!")
         print(self.description)
 
     def set_conversation(self, conversation):

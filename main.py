@@ -13,17 +13,13 @@ blorpington = Enemy("Blorpington", "A Wumpus")
 blorpington.describe()
 blorpington.set_conversation("Greetings :)")
 blorpington.talk()
-blorpington.set_weakness("Mondragon Rifle")
+blorpington.set_weakness("Glock")
 dungeon.set_character(blorpington)
 
 cavern.link_caves(dungeon, "South")
 dungeon.link_caves(cavern, "North")
 dungeon.link_caves(grotto, "West")
 grotto.link_caves(dungeon, "East")
-
-cavern.get_details()
-dungeon.get_details()
-grotto.get_details()
 
 current_cave = cavern
 dead = False
@@ -41,7 +37,8 @@ while dead is False:
             inhabitated.talk()
     elif command == "Fight":
         if inhabitated is not None and isinstance(inhabitated, Enemy):
-            fight_with = input("What do you want to fight with? ")
+            print("What do you want to fight with? ")
+            fight_with = input()
             if inhabitated.fight(fight_with) is True:
                 print("Bravo, you win.")
                 current_cave.set_character(None)
