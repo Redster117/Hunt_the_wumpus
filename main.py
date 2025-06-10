@@ -11,7 +11,7 @@ dungeon.set_description("A foreboding dungeon with stone walls.")
 
 blorpington = Enemy("Blorpington", "A Wumpus")
 blorpington.describe()
-blorpington.set_conversation("Greetings Nigga :)")
+blorpington.set_conversation("Greetings :)")
 blorpington.talk()
 blorpington.set_weakness("Mondragon Rifle")
 dungeon.set_character(blorpington)
@@ -26,7 +26,8 @@ dungeon.get_details()
 grotto.get_details()
 
 current_cave = cavern
-while True:
+dead = False
+while dead is False:
     print("\n")
     current_cave.get_details()
     inhabitated = current_cave.get_character()
@@ -46,5 +47,6 @@ while True:
                 current_cave.set_character(None)
             else:
                 print("Fuck off. U lost the fight weak ass bitch. ")
+                dead = True
         else:
             print("There is no one here to fight with.")

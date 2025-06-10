@@ -9,3 +9,4 @@ Wrote and tested a method to print the linked_caves dictionary to the terminal
 Created 'Blorpington - The Wumpus Character' in the test program and tested the conversation method.
 4/6/25 - Created the Enemy sub-class (of Character) and added its own methods for setting and getting the Enemy's weakness. Wrote a method for fight() that overrides the fight() method in the super-class. Updated the char_text code to test the new subclass objects (particularly the weakness and fight methods).
 6/6/25 - Finished testing the character in the char_test.py file. Added Blorpington object to the main program and added it to the dungeono object. Reworked the main loop to accept different inputs (moving, talking and fighting) - still need to finish the code to manage fighting.
+10/6/25 - 
